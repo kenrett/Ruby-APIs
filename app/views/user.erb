@@ -1,0 +1,17 @@
+<h1>Here is everything you want to know about '<%= @user.login  %>'</h1><br><br>
+
+<div id='git-info'>
+<h3>Name: <%= @user.name  %></h3>
+<h3>Github url: <%= @user.html_url  %></h3>
+<h3>Personal Website: <%= @user.blog  %></h3>
+</div>
+
+<div id='users-followers'>
+  <h2>Followers:</h2>
+  <% @followers.each do |i| %>
+  <p><%= i.login  %></p>
+  <% end %>
+</div>
+
+
+
